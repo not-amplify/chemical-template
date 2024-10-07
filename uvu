@@ -1,0 +1,11 @@
+import { ChemicalServer } from "chemicaljs";
+
+const [app, listen] = new ChemicalServer({
+    default: "uv",
+    uv: true,
+    rammerhead: true,
+    experimental: {
+        scramjet: false,
+        meteor: false,
+    }
+});
